@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="es" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,7 +65,27 @@
         </nav>
       </header>
     </header>
-    <main></main>
+    <main>
+      <!--Crea una web con bootstrap y js, que contenga un botón input donde se pueda cargar una tarea y un botón que al ser presionado agregue dicha tarea a una lista, cada elemento ingresado en la lista debe poder ser eliminado con un botón creado para ese fin. 
+-->
+      <section class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h1>Lista de Tareas</h1>
+            <input
+              type="text"
+              class="form-control mb-3"
+              id="tareaInput"
+              placeholder="Ingrese una tarea"
+            />
+            <button class="btn btn-primary" onclick="agregarTarea()">
+              Agregar
+            </button>
+            <ul id="taskList" class="list-group"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="text-center py-4 bg-dark-subtle">
       <p>&copy;Todos los derechos reservados</p>
     </footer>
